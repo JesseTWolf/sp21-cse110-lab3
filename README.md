@@ -19,26 +19,26 @@
 - [x] div, span (div defines a division and is usually used as a container for HTML elements which is then styled with CSS. Span is an inline container used to mark up a part of a text, or a part of a document. Div is a block level element while span is an inline element.)
 - [x] hr (Used to define thematic changes in the content. Usually displayed as a horizontal line.) 
 - [x] p (Defines a paragraph of text)
-- [ ] ul (Defines an unordered list, aka bullet list)
-- [ ] ol (Defines an ordered list, the list will be marked with numbers by default. Types can be changed however via the type attribute.)
+- [x] ul (Defines an unordered list, aka bullet list)
+- [x] ol (Defines an ordered list, the list will be marked with numbers by default. Types can be changed however via the type attribute.)
 - [x] li (Defines a list item, this is used within either a ul or ol element as an item of the corresponding list.)
 
 ## Inline text semantics
-- [ ] b (Specifies bold text and according to documentation should be used as a last resort and when no extra emphasis is required.)
-- [ ] strong (Defines text with strong importance. The content is typically displayed in bold. If what you are trying to bolden does not need any extra importance then use the b tag instead.)
+- [x] b (Specifies bold text and according to documentation should be used as a last resort and when no extra emphasis is required.)
+- [x] strong (Defines text with strong importance. The content is typically displayed in bold. If what you are trying to bolden does not need any extra importance then use the b tag instead.)
 - [x] i (Specifies text that you want italicized, something in an alternate voice or mood, a technical term, a phrase from another language, a thought, a ship name, etc. Should only be used when there is not a more appropriate semantic element. )
 - [x] em (Defines emphasized text. The content is usually italicized.)
-- [ ] a (Defines a hyperlink, which is used to link from one page to another. The href attribute will be what the link actually is and due to this is incredibly important to include.)
+- [x] a (Defines a hyperlink, which is used to link from one page to another. The href attribute will be what the link actually is and due to this is incredibly important to include.)
 - [x] br (Is used as a single line break between elements. Something to note is that this is a single tag, no closing tag goes along with this one.)
  
 ## Images and multimedia
 - [x] img ("Embeds" an image within an HTML page. Two attributes for this one that are basically required: src - specifies the path to the image and alt - specifies alternate text, text that will be displayed if the image is not reachable.)
 - [x] audio (Adds audio controls, like play, pause, and volume. The source element is embedded within this audio element and is where the audio file itself is specified.)
-- [ ] video (Is used to show a video on a web page. Video tag has a few attributes that are important: controls - which adds in the controls, width and height, which are self explanatory. Just like the audio tag the actual file is linked via the source tag within this video element.)
+- [x] video (Is used to show a video on a web page. Video tag has a few attributes that are important: controls - which adds in the controls, width and height, which are self explanatory. Just like the audio tag the actual file is linked via the source tag within this video element.)
 
 ## Interactive Elements
-- [ ] details (Specifies additional details that the user can open and close on demand. Really any content can be put within this element.)
-- [ ] summary (Defines a visible heading for the details element. The heading can be clicked to view/hide the details.)
+- [x] details (Specifies additional details that the user can open and close on demand. Really any content can be put within this element.)
+- [x] summary (Defines a visible heading for the details element. The heading can be clicked to view/hide the details.)
 
 ## Forms
 - [ ] form (Used to create an HTML form for user input. Can contain one or more of the following elements: input, textarea, button, select, option, optgroup, fieldset, label, and output)
