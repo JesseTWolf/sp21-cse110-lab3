@@ -3,10 +3,7 @@ Link to published site is https://jessetwolf.github.io/Lab2/
 
 
 
-
-
-
-
+![validation report](/screenshots/W3-Validation-Report.png)
 
 
 
