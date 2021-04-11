@@ -1,7 +1,7 @@
 
 
 # Part 1. Intro to HTML
-#### Below is a sort of checklist to help me keep track what I have and haven't done so far. Included little tidbits of notes for future me to look back on. Descriptions found from provided sites as well as w3schools.com.
+#### Below is a checklist to help me keep track what I have and haven't done so far. Included little tidbits of notes for future me to look back on. Descriptions found from w3schools.com and developer.mozilla.org
 ---
 ## Document metadata
 - [x] title (Title of page that will show up within the tab.)
