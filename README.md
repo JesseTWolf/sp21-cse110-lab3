@@ -41,17 +41,17 @@
 - [x] summary (Defines a visible heading for the details element. The heading can be clicked to view/hide the details.)
 
 ## Forms
-- [ ] form (Used to create an HTML form for user input. Can contain one or more of the following elements: input, textarea, button, select, option, optgroup, fieldset, label, and output)
-- [ ] fieldset (Used to group related elements in a form. Draws a box around said related elements.)
-- [ ] input (Specifies an input field where the user can enter data. Can be displayed in multiple ways depening on the type of the attribute.)
-  - [ ] checkbox 
-  - [ ] radio
-  - [ ] text
-  - [ ] date
-- [ ] textarea (Defines a multi-line text input control. Is often used in a form to collect user inputs like comments or reviews.)
-- [ ] datalist (Specifies a list of predefined options for an input element.)
-- [ ] select (Used to create a drop-down list.)
-- [ ] option (Defines an option in a select list. Option elements go inside a select, optgroup, or datalist element.)
-- [ ] button (Defines a clickable button. You can embed a lot of different tags within the button itself.)
+- [x] form (Used to create an HTML form for user input. Can contain one or more of the following elements: input, textarea, button, select, option, optgroup, fieldset, label, and output)
+- [x] fieldset (Used to group related elements in a form. Draws a box around said related elements.)
+- [x] input (Specifies an input field where the user can enter data. Can be displayed in multiple ways depening on the type of the attribute.)
+  - [x] checkbox 
+  - [x] radio
+  - [x] text
+  - [x] date
+- [x] textarea (Defines a multi-line text input control. Is often used in a form to collect user inputs like comments or reviews.)
+- [x] datalist (Specifies a list of predefined options for an input element.)
+- [x] select (Used to create a drop-down list.)
+- [x] option (Defines an option in a select list. Option elements go inside a select, optgroup, or datalist element.)
+- [x] button (Defines a clickable button. You can embed a lot of different tags within the button itself.)
 
 *You need to have at least one input of each type specified. 
