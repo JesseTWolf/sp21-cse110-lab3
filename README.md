@@ -1,4 +1,16 @@
 
+Link to published site is https://jessetwolf.github.io/Lab2/
+
+
+
+
+
+
+
+
+
+
+
 
 # Part 1. Intro to HTML
 #### Below is a checklist to help me keep track what I have and haven't done so far. Included little tidbits of notes for future me to look back on. Descriptions found from w3schools.com and developer.mozilla.org
