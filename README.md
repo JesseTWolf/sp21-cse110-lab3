@@ -1,5 +1,5 @@
 
-Link to published site is https://jessetwolf.github.io/Lab2/
+Link to published site is https://jessetwolf.github.io/sp21-cse110-lab3/
 
 
 Validation Report:
