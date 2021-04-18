@@ -2,65 +2,88 @@
 Link to published site is https://jessetwolf.github.io/sp21-cse110-lab3/
 
 
-Validation Report:
-![validation report](/screenshots/W3-Validation-Report.png)
-
-
-
-
-
-# Part 1. Intro to HTML
+# CSS Checklist
 #### Below is a checklist to help me keep track what I have and haven't done so far. Included little tidbits of notes for future me to look back on. Descriptions found from w3schools.com and developer.mozilla.org
 ---
-## Document metadata
-- [x] title (Title of page that will show up within the tab.)
-- [x] meta (Metadata that will not be shown to user but instead given to the browser.)
-- [x] link (usually <link> is used to link a stylesheet, but since we're not using CSS, you can use it to link a favicon instead. The favicon is the image that is seen within the tab next to the title of the page)
+1. General CSS Topics:
+
+    - [ ] Comment /* write down comments to make your css easier to read */
+
+    - [ ] Color                                               /* apply colors to your HTML elements */
+        - [ ] rgb(r, g, b) or rgba(r, g, b, a)     /* red, green, blue, alpha values */
+        - [ ] #FFF or #FFFFFF                    /* hex codes */
+        - [ ] hsl(h, s, l) or hsla(h, s, l, a)       /* hue, saturation, lightness, alpha values */
+        - [ ] Color name (i.e ‘orange’)
+
+    - [ ] Background     (Links to an external site.)/* apply background styles to your elements */
+        - [ ] background-color
+
+    - [ ] Unit (Links to an external site.)     /* units of measurement for sizing and spacing your elements */
+        - [ ] Use 3 unique relative units total
+        - [ ] Use 3 unique absolute units total
+
+    - [ ] Box Model (Links to an external site.)     /* configure the containers that holds your HTML content */
+    (“long” and “short” refer to longhand and shorthand syntax and should give the same results. They’re simply different ways to declare your style rules, use at least one of each syntax) 
+
+        - [ ] Margin     /* spacing between html elements */
+            - [ ] Long (margin-top, margin-bottom, margin-left, margin-right)
+            - [ ] Short (margin: <top> <right> <bottom> <left>)
+            - [ ] Auto margins: margin: auto
+     
+        - [ ] Padding     /* spacing within html elements */
+            - [ ] Long (padding-top, padding-bottom, padding-left, padding-right)
+            - [ ] Short (padding: <top> <right> <bottom> <left>)
+     
+        - [ ] Borders (Links to an external site.)     /* borders around html elements, hint: apply borders before testing out padding and margin to better understand the difference between the two */
+            - [ ] border-style
+            - [ ] border-color
+            - [ ] border-width
+            - [ ] border-radius
+
+    - [ ] Text     /* style your text */
+        - [ ] color
+        - [ ] text-decoration
+        - [ ] text-align
+
+    - [ ] Display (Links to an external site.)
+        - [ ] Experiment with these values: none, block, inline-block, inline. Include at least two of them in your page.
+        Apply theses values to the display property
+    - [ ] Sizing     /* set the height and width for an element */
+        - [ ] height / width
+        - [ ] max-width / min-width     /* add sizing constraints for responsive web pages */
+    - [ ] Position (Links to an external site.)     /* element positioning on the page */
+        - [ ] Experiment with these values: static, relative, fixed, absolute, sticky. Include at least two of them in your page.
+        Apply these values to the position property
+    - [ ] Pseudo-class (Links to an external site.)     /* elements that exist in your document conditionally */
+        - [ ] :hover
+        - [ ] :active
+    - [ ] Layouts
+            - [ ] Flexbox (Links to an external site.)   /* allow your elements to lay themselves out automatically */
+                apply flex to the display property
+                Must have more than two children within the element that is using flexbox. Must use minimum three of the flexbox related attributes
+            - [ ] Grid  (Links to an external site.)        /* instantiate a grid for your layouts */
+                apply grid to the display property
+                Must have more than two children within the element that is using the grid. Must use a minimum of three of the grid related attributes
+    - [ ] Responsiveness       /* make your website friendly for multiple devices */
+        - [ ] At least one query based on the screen width
+            - [ ] Media Query (Links to an external site.)
+    - [ ] Fonts (Links to an external site.)       /* pick varying font styles to make your text fun to read */
+        - [ ] Include and use a 3rd party font (https://fonts.google.com/ (Links to an external site.)). You can load the font in either your HTML or your CSS
  
-## Content sectioning
-- [x] main (Signifies the main content of the document. The content inside should be unique and not repeated elsewhere or within)
-- [x] header, footer
-- [x] nav (Defines a set of navigation links. Is intended only for major block of navigation links)
-- [x] h1, h2, h3 (Represents headings. h1 being the most important, going down in importance from there.)
-- [x] section (defines a section in a document)
+2. CSS Selectors (Links to an external site.)
 
-## Text content
-- [x] div, span (div defines a division and is usually used as a container for HTML elements which is then styled with CSS. Span is an inline container used to mark up a part of a text, or a part of a document. Div is a block level element while span is an inline element.)
-- [x] hr (Used to define thematic changes in the content. Usually displayed as a horizontal line.) 
-- [x] p (Defines a paragraph of text)
-- [x] ul (Defines an unordered list, aka bullet list)
-- [x] ol (Defines an ordered list, the list will be marked with numbers by default. Types can be changed however via the type attribute.)
-- [x] li (Defines a list item, this is used within either a ul or ol element as an item of the corresponding list.)
+CSS selectors allow you to select the HTML element you want to style. Each type of selector targets a different identifier on your HTML element. For this lab you must use at least one of every bulleted selector method.
 
-## Inline text semantics
-- [x] b (Specifies bold text and according to documentation should be used as a last resort and when no extra emphasis is required.)
-- [x] strong (Defines text with strong importance. The content is typically displayed in bold. If what you are trying to bolden does not need any extra importance then use the b tag instead.)
-- [x] i (Specifies text that you want italicized, something in an alternate voice or mood, a technical term, a phrase from another language, a thought, a ship name, etc. Should only be used when there is not a more appropriate semantic element. )
-- [x] em (Defines emphasized text. The content is usually italicized.)
-- [x] a (Defines a hyperlink, which is used to link from one page to another. The href attribute will be what the link actually is and due to this is incredibly important to include.)
-- [x] br (Is used as a single line break between elements. Something to note is that this is a single tag, no closing tag goes along with this one.)
- 
-## Images and multimedia
-- [x] img ("Embeds" an image within an HTML page. Two attributes for this one that are basically required: src - specifies the path to the image and alt - specifies alternate text, text that will be displayed if the image is not reachable.)
-- [x] audio (Adds audio controls, like play, pause, and volume. The source element is embedded within this audio element and is where the audio file itself is specified.)
-- [x] video (Is used to show a video on a web page. Video tag has a few attributes that are important: controls - which adds in the controls, width and height, which are self explanatory. Just like the audio tag the actual file is linked via the source tag within this video element.)
-
-## Interactive Elements
-- [x] details (Specifies additional details that the user can open and close on demand. Really any content can be put within this element.)
-- [x] summary (Defines a visible heading for the details element. The heading can be clicked to view/hide the details.)
-
-## Forms
-- [x] form (Used to create an HTML form for user input. Can contain one or more of the following elements: input, textarea, button, select, option, optgroup, fieldset, label, and output)
-- [x] fieldset (Used to group related elements in a form. Draws a box around said related elements.)
-- [x] input (Specifies an input field where the user can enter data. Can be displayed in multiple ways depening on the type of the attribute.)
-  - [x] checkbox 
-  - [x] radio
-  - [x] text
-  - [x] date
-- [x] textarea (Defines a multi-line text input control. Is often used in a form to collect user inputs like comments or reviews.)
-- [x] datalist (Specifies a list of predefined options for an input element.)
-- [x] select (Used to create a drop-down list.)
-- [x] option (Defines an option in a select list. Option elements go inside a select, optgroup, or datalist element.)
-- [x] button (Defines a clickable button. You can embed a lot of different tags within the button itself.)
-
-*You need to have at least one input of each type specified. 
+  - [ ] Class Selector (.class)
+  - [ ] ID Selector (#id)
+  - [ ] Universal Selector (*)
+  - [ ] Element Selector (element) 
+  - [ ] Attribute Selector (e.g. [attribute=foo])     
+  - [ ] Pseudo-class Selector (e.g. p::hover)
+  - [ ] Selector List (element, element)                   /* select multiple elements */
+  - [ ] Combinators (you must use one of each)    /* specify selections based on element positioning in the DOM tree */
+      - [ ] Descendant Combinator (element element)
+      - [ ] Child Combinator (element > element)
+      - [ ] General sibling combinator (element ~ element)
+      - [ ] Adjacent sibling combinator (element + element)
+      - [ ] Combining Two Selectors (element.class)
