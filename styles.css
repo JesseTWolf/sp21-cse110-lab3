@@ -1,0 +1,57 @@
+
+/* Any element with the class "date" will be centered and colored. */
+.date {
+    text-align: center;
+    color: hsl(28, 87%, 67%);
+}
+
+/* Any element with the class "author" will be colored blue. */
+.author {
+    color: blue;
+}
+
+/* Any element with id of "most-recent-post will be selected. */
+#most-recent-post {
+    border-width: 0.05in;
+    border-style: solid;
+    border-color: green;
+    padding-top: 2pt;
+}
+
+/* Any audio element will be sized as denoted below. */
+audio {
+    display:inline-block;
+    max-height: 20px;
+    max-width: 280px;
+}
+
+/* Center the text for each of the posts titles. */
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.block, section {
+    /* The size of the border width wise. */
+    border-width: 2px;
+    /* What style of border, in this case a solid line. */
+    border-style: solid;
+    /* What color the border is */
+    border-color: black;
+    /* Adds curve to edges of the border's box. */
+    border-radius: 10pt;
+    padding: .5vh, ;
+} 
+
+a:hover {
+    color: blue;
+}
+
+div {
+    display: grid;
+    list-style: none;
+}
+
+.block {
+    display: block;
+}
