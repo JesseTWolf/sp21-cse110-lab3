@@ -14,8 +14,8 @@ h2 + .date {
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* Any label with the attribute of name within it. Color the background yellow. */
-label[name] {
+/* Any label with the attribute of "for" within it. Color the background yellow. */
+label[for] {
     background-color: yellow;
 }
 
