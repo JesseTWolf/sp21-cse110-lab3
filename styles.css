@@ -126,9 +126,21 @@ fieldset {
     margin-bottom: 5px;
 }
 
+/* Center direct children within each fieldset (Legend) to be auto centered using margin. */
+fieldset * {
+    margin: auto;
+}
+
 /* If the size gets to within 600px then the small screen text at bottom of screen turns green. */
 @media screen and (max-width: 600px) {
     #small-screen {
         color: green;
     }
+}
+
+/* Select the video and center it horizontally on screen. Give it a little padding below as well. */
+video {
+    display: block;
+    margin: auto;
+    padding-bottom: 5px;
 }
