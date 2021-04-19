@@ -1,13 +1,23 @@
 
-/* Any element with the class "date" will be centered and colored. */
-.date {
+/* Any element with the class "date" that is right after an h2 element will be centered and colored. */
+h2 + .date {
     text-align: center;
-    color: hsl(28, 87%, 67%);
+    color: hsl(9, 79%, 46%);
 }
 
 /* Any element with the class "author" will be colored blue. */
 .author {
     color: blue;
+}
+
+/* Wildcard so everything on the the page should be set to Ubuntu text. */
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Any label with the attribute of name within it. Color the background yellow. */
+label[name] {
+    background-color: yellow;
 }
 
 /* Any element with id of "most-recent-post will be selected. */
@@ -25,8 +35,8 @@ audio {
     max-width: 280px;
 }
 
-/* Center the text for each of the posts titles. */
-h2 {
+/* Center the text for each of the posts titles. Including the first post that was put within a div.*/
+section h2, div h2 {
     text-align: center;
     text-decoration: underline;
 }
@@ -43,15 +53,49 @@ h2 {
     padding: .5vh, ;
 } 
 
+/* General Sibling Selector, selects the siblings of ul that are h4 elements. */
+ul ~ h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 5px;
+}
+
+/* When hovering over an a element (a link) it will change the color to blue. */
 a:hover {
     color: blue;
 }
 
-div {
-    display: grid;
-    list-style: none;
+/* Child Selector, selects all img elements that are children of div. */
+div > img {
+    border: 1.5px solid black;
+    height: 500px;
+    width: 500px;
 }
 
 .block {
     display: block;
+}
+
+/* Div elements that have img-grid class, create a grid. */
+div.img-grid {
+    display: grid;
+    /* 2 columns  */
+    grid-template-columns: repeat(2, 1fr);
+    /* Add a gap between the columns of the grid. */
+    grid-column-gap: 12px;
+    /* Add a gap between everything else as well. */
+    grid-gap: 10px;
+    /* Add padding within the grid. */
+    padding: 10px;
+    /* Auto create rows every 500px, should end up with 3 rows with our 6 photos. */
+    grid-auto-rows: 500px;
+}
+
+/* Select the img elements within the element labeled as img-grid class. */
+.img-grid img {
+    /* Since the grid pieces are already sized appropriately we can have our images fill those grid slots. */
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+    /* Add a border surrounding each image. */
+    border: 2px solid #333;
 }
