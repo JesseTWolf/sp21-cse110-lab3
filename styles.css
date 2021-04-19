@@ -1,4 +1,3 @@
-
 /* Any element with the class "date" that is right after an h2 element will be centered and colored. */
 h2 + .date {
     text-align: center;
