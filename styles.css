@@ -64,6 +64,11 @@ a:hover {
     color: blue;
 }
 
+/* After you've clicked on the link text changes to yellow. */
+a:active {
+    color: yellow;
+  }
+
 /* Child Selector, selects all img elements that are children of div. */
 div > img {
     border: 1.5px solid black;
@@ -98,4 +103,32 @@ div.img-grid {
     margin: 2px;
     /* Add a border surrounding each image. */
     border: 2px solid #333;
+}
+
+/* Create a flexbox for use within the form. */
+.flexbox {
+    /* Set the display as flex. */
+    display: flex;
+    /* Column as the direction makes the flex boxes be vertical rather then horizontal. */
+    flex-direction: column;
+    /* Have the elements wrap if needed. */
+    flex-wrap: wrap;
+    /* Center the items within the flex box. */
+    align-items: center;
+}
+
+/* Select the fieldset which is the inner boxes of my form. */
+fieldset {
+    /* Set a universal size for cleanliness. */
+    width: 500px;
+    /* Add a margin above and below each element. */
+    margin-top: 5px; 
+    margin-bottom: 5px;
+}
+
+/* If the size gets to within 600px then the small screen text at bottom of screen turns green. */
+@media screen and (max-width: 600px) {
+    #small-screen {
+        color: green;
+    }
 }
